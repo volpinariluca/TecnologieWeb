@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Zaino da trekking",
+    "price": 109.95,
+    "description": "Zaino capiente con scomparto per laptop fino a 15 pollici."
+  },
+  {
+    "id": 2,
+    "title": "Maglietta slim fit",
+    "price": 22.3,
+    "description": "Maglietta in cotone, vestibilit\u00e0 slim, colore blu."
+  },
+  {
+    "id": 3,
+    "title": "Giacca in cotone",
+    "price": 55.99,
+    "description": "Giacca leggera adatta a primavera e autunno."
+  },
+  {
+    "id": 4,
+    "title": "Cuffie wireless",
+    "price": 64.0,
+    "description": "Cuffie bluetooth con cancellazione del rumore."
+  },
+  {
+    "id": 5,
+    "title": "Borraccia in acciaio",
+    "price": 18.5,
+    "description": "Borraccia isolata da 750 ml, mantiene la temperatura per 12 ore."
+  }
+]

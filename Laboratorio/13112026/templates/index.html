@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista prodotti e aggiunta prodotto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    form label {
+      display: block;
+      margin: 8px 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 8px 12px;
+    }
+    .errorDiv {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prodotti</h1>
+  <table id="productsTable">
+    <thead>
+      <tr>
+        <th>Titolo</th>
+        <th>Prezzo</th>
+        <th>Descrizione</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- righe inserite via JS -->
+    </tbody>
+  </table>
+
+  <h2>Aggiungi nuovo prodotto</h2>
+  <form id="addProductForm">
+    <label>
+      Titolo:
+      <input type="text" name="title" required>
+    </label>
+    <label>
+      Prezzo:
+      <input type="number" name="price" step="0.01" min="0" required>
+    </label>
+    <label>
+      Descrizione:
+      <textarea name="description" rows="3"></textarea>
+    </label>
+    <button type="submit">Aggiungi prodotto</button>
+  </form>
+
+  <div id="errorMessage" class="errorDiv"></div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
